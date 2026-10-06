@@ -15,3 +15,9 @@ https://zypage.com/user/payment_order (trang hiện tại hoặc toàn bộ lị
 - Tổng tiền trang hiện tại, tổng toàn bộ lịch sử
 - Chỉ tính đơn "Đã thanh toán"
 - Lọc theo chữ, chọn cột tiền thủ công, kéo thả bảng
+## Hướng dẫn sử dụng
+- Truy cập vào tài khoản cá nhân
+- Mở mục "Đơn hàng"
+- Nếu Extention chưa hiện thì reload (F5) lại page
+
+### Created by Đị Gumball
