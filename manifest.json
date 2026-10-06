@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Zypage - Tổng tiền đơn hàng",
+  "version": "1.2.0",
+  "description": "Tự động cộng tổng tiền các đơn hàng trong trang payment_order của Zypage.",
+  "content_scripts": [
+    {
+      "matches": ["https://zypage.com/user/payment_order*"],
+      "js": ["content.js"],
+      "css": ["panel.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

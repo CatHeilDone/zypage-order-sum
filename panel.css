@@ -1,0 +1,19 @@
+#zp-sum{position:fixed;right:16px;top:70px;max-height:calc(100vh - 90px);overflow:auto;z-index:2147483647;width:270px;background:#fff;color:#222;
+font:13px/1.4 system-ui,sans-serif;border:1px solid #ddd;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.18);padding:12px}
+#zp-sum h4{margin:0 0 8px;font-size:13px;display:flex;justify-content:space-between;align-items:center}
+#zp-sum .zp-total{font-size:22px;font-weight:700;color:#0a7a3d;margin:4px 0}
+#zp-sum .zp-sub{color:#666;font-size:12px}
+#zp-sum input{width:100%;box-sizing:border-box;margin-top:8px;padding:6px 8px;border:1px solid #ccc;border-radius:6px}
+#zp-sum button{margin-top:8px;margin-right:6px;padding:5px 9px;border:1px solid #ccc;background:#f6f6f6;border-radius:6px;cursor:pointer}
+#zp-sum button:hover{background:#eee}
+#zp-sum .zp-x{border:0;background:none;margin:0;padding:0;font-size:16px}
+.zp-col-pick{outline:2px dashed #e67e22!important;cursor:crosshair!important}
+.zp-row-off{opacity:.35;text-decoration:line-through}
+.zp-col-hl{background:rgba(10,122,61,.08)}
+#zp-sum .zp-all{margin-top:10px;padding-top:8px;border-top:1px dashed #ddd}
+#zp-sum .zp-all-total{font-size:20px;font-weight:700;color:#1458c7;margin:2px 0}
+#zp-sum .zp-primary{background:#1458c7;color:#fff;border-color:#1458c7}
+#zp-sum .zp-primary:hover{background:#0f48a3}
+#zp-sum h4{cursor:move;user-select:none}
+#zp-sum label{display:block;margin-top:8px;font-size:12px;cursor:pointer}
+#zp-sum label input{width:auto;margin:0 6px 0 0;vertical-align:middle}
