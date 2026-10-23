@@ -19,5 +19,3 @@ https://zypage.com/user/payment_order (trang hiện tại hoặc toàn bộ lị
 - Truy cập vào tài khoản cá nhân
 - Mở mục "Đơn hàng"
 - Nếu Extention chưa hiện thì reload (F5) lại page
-
-### Created by Đị Gumball
