@@ -15,7 +15,7 @@
   }
   const fmt = n => n.toLocaleString("vi-VN") + " đ";
 
-  // ---------- bảng ----------
+  // ---------- Table ----------
   function getTable(doc = document) {
     const tables = [...doc.querySelectorAll("table")].filter(t => t.rows.length > 1);
     return tables.sort((a, b) => b.rows.length - a.rows.length)[0] || null;
@@ -54,7 +54,7 @@
     return { total, count, rows, sig: sigs.join("|") };
   }
 
-  // ---------- phân trang ----------
+  // ---------- Split pages ----------
   const PAGE_RE = /Trang\s*(\d+)\s*\/\s*(\d+)/i;
   function pageInfo(doc = document) {
     const m = (doc.body.textContent || "").match(PAGE_RE);
@@ -116,7 +116,7 @@
     try { return new URL(h, base).href; } catch { return null; }
   };
 
-  // ---------- cộng toàn bộ ----------
+  // ---------- Sum ----------
   async function fetchMode(col, f, st) {
     let url = usableHref(findFirstEl(document), location.href) || location.href;
     const seenUrl = new Set(), seenSig = new Set();
@@ -190,7 +190,7 @@
     running = false; $(".zp-allbtn").textContent = "Tính toàn bộ lịch sử";
   }
 
-  // ---------- trang hiện tại ----------
+  // ---------- Current page ----------
   function compute() {
     const table = getTable();
     let total = 0, count = 0, note = "";
@@ -220,7 +220,7 @@
   const box = document.createElement("div");
   box.id = "zp-sum";
   box.innerHTML = `
-    <h4><span>💰 Tổng tiền đơn hàng</span><button class="zp-x" title="Thu gọn">–</button></h4>
+    <h4><span>Tổng tiền đơn hàng</span><button class="zp-x" title="Thu gọn">–</button></h4>
     <div class="zp-body">
       <div class="zp-sub">Trang này</div>
       <div class="zp-total">0 đ</div>
